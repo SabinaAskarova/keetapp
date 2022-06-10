@@ -1,0 +1,190 @@
+
+@keyframes back-image_a {
+    to {
+        transform: translateX(0px);
+    }
+}
+
+
+
+/* card-container */
+
+.carousel-inner{
+    display: flex;
+    align-items: center;
+}
+.card-img{
+    height: 30rem;
+}
+.card-info:hover{
+    box-shadow: 1px 1px 2px grey, 0 0 20px grey, 0 0 5px darkblue;
+}
+.card-container .card-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-container .card-info .card-info-container {
+    display: inline-block;
+    width: 18%;
+    border: .1rem solid rgba(0, 0, 0, .1);
+}
+
+.card-container .card-info .card-info-container .card-carousel .carousel-image-container {
+    width: 100%;
+    height: 25rem;
+}
+
+.card-container .card-info .card-info-container .card-carousel .carousel-image-container .card-img {
+    width: 100%;
+    height: 1rem;
+}
+
+.card-container .card-info .card-info-container .card-body .card-text-wrapper {
+    height: 15rem;
+    text-align: justify;
+}
+
+/* features */
+
+.carousel .carousel-inner .carousel-item .features .features-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.carousel .carousel-inner .carousel-item .features .features-wrapper .features-left-container,
+.carousel .carousel-inner .carousel-item .features .features-wrapper .features-right-container {
+    display: inline-block;
+    background-color: red;
+    flex: 1;
+    height: 45rem;
+    margin: 1rem;
+}
+
+.carousel .carousel-inner .carousel-item .features .features-wrapper .features-left-container .features-img,
+.carousel .carousel-inner .carousel-item .features .features-wrapper .features-right-container .features-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* product card */
+
+.carousel .carousel-inner .carousel-item .product-card .product-card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel .carousel-inner .carousel-item .product-card .product-card-container .product-wrapper {
+    position: relative;
+}
+
+.carousel .carousel-inner .carousel-item .product-card .product-card-container .product-wrapper .product-card-info {
+    margin: 1.6rem;
+    border: .1rem solid #ffffff;
+}
+
+.carousel .carousel-inner .carousel-item .product-card .product-card-container .product-wrapper .product-card-info:hover {
+    border: .1rem solid lightgray;
+}
+
+.carousel .carousel-inner .carousel-item .product-card .product-card-container .product-wrapper .product-card-info .product-card-images {
+    width: 20rem;
+    height: 30rem;
+    display: inline-block;
+}
+
+.carousel .carousel-inner .carousel-item .product-card .product-card-container .product-wrapper .product-card-info .product-card-images .product-link .product-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel .carousel-inner .carousel-item .product-card .product-card-container .product-wrapper .product-card-info .product-card-body {
+    height: 10rem;
+    padding: .5rem;
+}
+
+.carousel .carousel-inner .carousel-item .product-card .product-card-container .product-wrapper .product-card-info .product-card-body .product-info {
+    display: block;
+    padding: .5rem 0rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.carousel .carousel-inner .carousel-item .product-card .product-card-container .product-wrapper .product-card-info .product-card-body .book-info {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.cardsdisplay{
+    display: flex;
+    flex-direction: row;
+  
+}
+/* media*/
+
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+    .card-container .card-info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    flex-direction: row;
+
+        flex-wrap: wrap;
+    }
+    /* Carousel style */
+    .carousel-container .carousel-inner .carousel-item-container .carousel-item-images .carousel-images-wrapper .carousel-item {
+        position: relative;
+    }
+
+    .carousel-container .carousel-inner .carousel-item-container .carousel-item-images .carousel-images-wrapper .carousel-item .carousel-images {
+        position: absolute;
+        width: 30rem;
+        height: 40rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+   
+
+    /* Features style */
+
+    .carousel .carousel-inner .carousel-item .features .features-wrapper {
+        display: flex; 
+        align-items: center; 
+        justify-content: center;
+    }
+
+    .carousel .carousel-inner .carousel-item .features .features-wrapper .features-left-container,
+    .carousel .carousel-inner .carousel-item .features .features-wrapper .features-right-container {
+        display: inline-block;
+        background-color: red;
+        flex: 1;
+        height: 35rem;
+        margin: .7rem;
+    }
+
+}
+
+@media (max-width: 576px) {
+    html {
+        font-size: 50%;
+    }
+
+
+
+    /* Features Style */
+
+    .all-features {
+        display: none;
+    }
+}
+
